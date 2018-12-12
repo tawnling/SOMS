@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="Doctor_Diagnosis" blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="827.0" prefWidth="379.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Doctor_DiagnosisController">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <children>
+      <Label alignment="CENTER" layoutX="136.0" layoutY="58.0" prefHeight="27.0" prefWidth="120.0" text="诊     治">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="104.0" text="姓名：" />
+      <Label layoutX="49.0" layoutY="153.0" text="病情：" />
+      <TextArea fx:id="condition" layoutX="95.0" layoutY="169.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="194.0" prefWidth="241.0" />
+      <TextField fx:id="user" layoutX="95.0" layoutY="99.0" />
+      <Label layoutX="10.0" layoutY="377.0" prefHeight="20.0" prefWidth="76.0" text="诊治费用：" />
+      <TextField fx:id="price" alignment="CENTER" layoutX="95.0" layoutY="372.0" prefHeight="30.0" prefWidth="120.0" />
+      <Label layoutX="228.0" layoutY="377.0" prefHeight="20.0" prefWidth="18.0" text="元" />
+      <Label layoutX="10.0" layoutY="436.0" prefHeight="20.0" prefWidth="76.0" text="处方：">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="475.0" text="药品名称" />
+      <Label layoutX="207.0" layoutY="475.0" text="药品数量" />
+      <TextField fx:id="mname" layoutX="11.0" layoutY="531.0" prefHeight="30.0" prefWidth="201.0" />
+      <TextField fx:id="mn" layoutX="207.0" layoutY="531.0" prefHeight="30.0" prefWidth="60.0" />
+      <Button fx:id="add" layoutX="285.0" layoutY="531.0" mnemonicParsing="false" onAction="#Add_Action" text="添  加" />
+      <TextArea fx:id="recipt" layoutX="16.0" layoutY="574.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="194.0" prefWidth="241.0" />
+      <Label fx:id="tips" alignment="CENTER" layoutX="63.0" layoutY="426.0" prefHeight="20.0" prefWidth="250.0" textFill="#dd0303" />
+      <Button fx:id="ok" layoutX="290.0" layoutY="632.0" mnemonicParsing="false" onAction="#OK_Action" prefHeight="54.0" prefWidth="70.0" text="完成">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

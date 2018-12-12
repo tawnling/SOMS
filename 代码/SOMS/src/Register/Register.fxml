@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="Register" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Register.RegisterController">
+   <children>
+      <Label layoutX="152.0" layoutY="96.0" prefHeight="20.0" prefWidth="53.0" text="账号：" />
+      <Label layoutX="152.0" layoutY="147.0" prefHeight="20.0" prefWidth="53.0" text="密码：" />
+      <TextField fx:id="account" layoutX="216.0" layoutY="91.0" />
+      <Label alignment="CENTER" layoutX="268.0" layoutY="38.0" prefHeight="31.0" prefWidth="64.0" text="账号注册">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <PasswordField fx:id="password" layoutX="216.0" layoutY="142.0" />
+      <RadioButton fx:id="rbpatient" layoutX="217.0" layoutY="253.0" mnemonicParsing="false" text="病人">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbdoctor" layoutX="333.0" layoutY="253.0" mnemonicParsing="false" text="医生" toggleGroup="$group" />
+      <Button fx:id="register" layoutX="209.0" layoutY="302.0" mnemonicParsing="false" onAction="#to_Register" prefHeight="30.0" prefWidth="72.0" text="注册" />
+      <Button fx:id="login" layoutX="325.0" layoutY="302.0" mnemonicParsing="false" onAction="#to_Login" prefHeight="30.0" prefWidth="72.0" text="登陆" />
+      <Label layoutX="122.0" layoutY="207.0" prefHeight="20.0" prefWidth="81.0" text="重复密码：" />
+      <PasswordField fx:id="rpassword" layoutX="216.0" layoutY="202.0" />
+      <Label fx:id="tips" alignment="CENTER" layoutX="148.0" layoutY="358.0" prefHeight="20.0" prefWidth="338.0" textFill="#ed2e0c" />
+   </children>
+</Pane>

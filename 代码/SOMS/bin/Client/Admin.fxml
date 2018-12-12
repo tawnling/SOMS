@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="admin" blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.AdminController">
+   <children>
+      <Label layoutX="104.0" layoutY="45.0" prefHeight="52.0" prefWidth="165.0" text="系统管理">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="142.0" text="用户名：" />
+      <Label layoutX="23.0" layoutY="230.0" text="密码：" />
+      <Label layoutX="23.0" layoutY="324.0" text="身份：" />
+      <TextField fx:id="username" layoutX="105.0" layoutY="142.0" prefHeight="30.0" prefWidth="194.0" />
+      <RadioButton fx:id="patient" layoutX="197.0" layoutY="324.0" mnemonicParsing="false" text="病人">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="madmin" layoutX="84.0" layoutY="324.0" mnemonicParsing="false" text="药房管理员" toggleGroup="$group" />
+      <RadioButton fx:id="doctor" layoutX="264.0" layoutY="324.0" mnemonicParsing="false" text="医生" toggleGroup="$group" />
+      <Button layoutX="46.0" layoutY="378.0" mnemonicParsing="false" onAction="#Action1" prefHeight="36.0" prefWidth="108.0" text="查询" />
+      <Button layoutX="210.0" layoutY="378.0" mnemonicParsing="false" onAction="#Action2" prefHeight="36.0" prefWidth="108.0" text="修改" />
+      <Button layoutX="46.0" layoutY="458.0" mnemonicParsing="false" onAction="#Action3" prefHeight="36.0" prefWidth="108.0" text="添加" />
+      <Button layoutX="210.0" layoutY="458.0" mnemonicParsing="false" onAction="#Action4" prefHeight="36.0" prefWidth="108.0" text="删除" />
+      <TextField fx:id="password" layoutX="105.0" layoutY="225.0" prefHeight="30.0" prefWidth="194.0" />
+      <Label fx:id="tip" alignment="CENTER" layoutX="109.0" layoutY="278.0" prefHeight="20.0" prefWidth="194.0" textFill="#ee0101" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</Pane>

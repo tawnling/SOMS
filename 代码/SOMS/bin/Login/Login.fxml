@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="Login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginController">
+   <children>
+      <Label layoutX="152.0" layoutY="96.0" prefHeight="20.0" prefWidth="53.0" text="账号：" />
+      <Label layoutX="152.0" layoutY="147.0" prefHeight="20.0" prefWidth="53.0" text="密码：" />
+      <TextField fx:id="account" layoutX="216.0" layoutY="91.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="248.0" layoutY="36.0" prefHeight="31.0" prefWidth="137.0" text="欢迎登陆门诊系统">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <PasswordField fx:id="password" layoutX="216.0" layoutY="142.0" />
+      <RadioButton fx:id="rbpatient" layoutX="135.0" layoutY="222.0" mnemonicParsing="false" text="病人">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbdoctor" layoutX="216.0" layoutY="222.0" mnemonicParsing="false" text="医生" toggleGroup="$group" />
+      <RadioButton fx:id="rbmadmin" layoutX="300.0" layoutY="222.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="108.0" text="药房管理员" toggleGroup="$group" />
+      <RadioButton fx:id="rbadmin" layoutX="425.0" layoutY="222.0" mnemonicParsing="false" text="管理员" toggleGroup="$group" />
+      <Button fx:id="login" layoutX="237.0" layoutY="281.0" mnemonicParsing="false" onAction="#to_Client" prefHeight="30.0" prefWidth="72.0" text="登录" />
+      <Button fx:id="register" layoutX="330.0" layoutY="281.0" mnemonicParsing="false" onAction="#to_Register" prefHeight="30.0" prefWidth="72.0" text="注册" />
+      <Accordion />
+      <Label fx:id="tips" alignment="CENTER" layoutX="223.0" layoutY="339.0" prefHeight="20.0" prefWidth="201.0" textFill="#f80505" />
+     
+     
+   
+   </children>
+</Pane>

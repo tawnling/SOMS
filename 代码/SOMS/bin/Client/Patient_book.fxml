@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="patient_book" blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <children>
+      <Label layoutX="50.0" layoutY="70.0" text="姓     名：" />
+      <Label layoutX="50.0" layoutY="140.0" text="病历号：" />
+      <Label layoutX="50.0" layoutY="210.0" text="性   别：" />
+      <Label layoutX="50.0" layoutY="280.0" text="年   龄：" />
+      <Label layoutX="50.0" layoutY="350.0" text="电   话：" />
+      <Label alignment="CENTER" layoutX="326.0" layoutY="23.0" prefHeight="20.0" prefWidth="112.0" text="病历本">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="username" contentDisplay="CENTER" layoutX="132.0" layoutY="70.0" prefHeight="20.0" prefWidth="125.0" />
+      <Label fx:id="P_ID" contentDisplay="CENTER" layoutX="132.0" layoutY="140.0" prefHeight="20.0" prefWidth="135.0" />
+      <Label fx:id="age" contentDisplay="CENTER" layoutX="132.0" layoutY="280.0" prefHeight="20.0" prefWidth="67.0" />
+      <Label fx:id="tel" contentDisplay="CENTER" layoutX="132.0" layoutY="350.0" prefHeight="20.0" prefWidth="135.0" />
+      <Label fx:id="sex" layoutX="132.0" layoutY="210.0" />
+      <Label layoutX="267.0" layoutY="70.0" text="主治医生：" />
+      <Label fx:id="doc" layoutX="371.0" layoutY="70.0" prefHeight="20.0" prefWidth="81.0" />
+      <Label layoutX="267.0" layoutY="140.0" text="科       室：" />
+      <Label layoutX="267.0" layoutY="210.0" text="挂号单号：" />
+      <Label layoutX="268.0" layoutY="280.0" text="挂号时间：" />
+      <Label layoutX="272.0" layoutY="350.0" text="诊断日期：" />
+      <Label layoutX="468.0" layoutY="70.0" text="病        情：" />
+      <Label layoutX="471.0" layoutY="280.0" text="处方信息：" />
+      <Label fx:id="dep" layoutX="371.0" layoutY="140.0" prefHeight="20.0" prefWidth="81.0" />
+      <Label fx:id="reg" layoutX="371.0" layoutY="210.0" prefHeight="20.0" prefWidth="81.0" />
+      <Label fx:id="rt" layoutX="371.0" layoutY="280.0" prefHeight="20.0" prefWidth="93.0" />
+      <Label fx:id="dt" layoutX="371.0" layoutY="350.0" prefHeight="20.0" prefWidth="135.0" />
+      <TextArea fx:id="condition" layoutX="549.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="recipt" layoutX="549.0" layoutY="280.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</Pane>

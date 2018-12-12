@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="Madmin" blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="1058.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.MadminController">
+   <children>
+      <Label layoutX="76.0" layoutY="77.0" prefHeight="54.0" prefWidth="228.0" text="采购药品登记">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="397.0" layoutY="77.0" prefHeight="54.0" prefWidth="228.0" text="查询药品信息">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="770.0" layoutY="77.0" prefHeight="54.0" prefWidth="200.0" text="管理供药商">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="165.0" text="药品编号：" />
+      <Label layoutX="62.0" layoutY="221.0" text="供药商编号：" />
+      <Label layoutX="76.0" layoutY="281.0" text="药品进价：" />
+      <Label layoutX="76.0" layoutY="343.0" text="药品标价：" />
+      <Label layoutX="77.0" layoutY="404.0" text="采购数量：" />
+      <TextArea fx:id="textArea" layoutX="411.0" layoutY="342.0" prefHeight="247.0" prefWidth="200.0" />
+      <Button fx:id="b1" layoutX="431.0" layoutY="142.0" mnemonicParsing="false" onAction="#Action21" prefHeight="47.0" prefWidth="140.0" text="过期药品查询" />
+      <Button fx:id="b2" layoutX="431.0" layoutY="192.0" mnemonicParsing="false" onAction="#Action22" prefHeight="54.0" prefWidth="140.0" text="库存不足药品查询" />
+      <Button fx:id="c2" layoutX="884.0" layoutY="492.0" mnemonicParsing="false" onAction="#Action32" text="修改" />
+      <Button fx:id="c4" layoutX="884.0" layoutY="548.0" mnemonicParsing="false" onAction="#Action34" text="删除" />
+      <Button fx:id="c3" layoutX="795.0" layoutY="548.0" mnemonicParsing="false" onAction="#Action33" text="添加" />
+      <Button fx:id="c1" layoutX="795.0" layoutY="492.0" mnemonicParsing="false" onAction="#Action31" text="查询" />
+      <Label layoutX="704.0" layoutY="175.0" text="编号：" />
+      <Label layoutX="704.0" layoutY="256.0" text="名称：" />
+      <Label layoutX="704.0" layoutY="333.0" text="地址：" />
+      <Label layoutX="704.0" layoutY="404.0" text="电话：" />
+      <TextField fx:id="mn" layoutX="159.0" layoutY="160.0" />
+      <TextField fx:id="sn" layoutX="159.0" layoutY="216.0" />
+      <TextField fx:id="jp" layoutX="159.0" layoutY="276.0" />
+      <TextField fx:id="bp" layoutX="159.0" layoutY="338.0" />
+      <TextField fx:id="num" layoutX="159.0" layoutY="399.0" />
+      <TextField fx:id="cnum" layoutX="769.0" layoutY="170.0" />
+      <TextField fx:id="cname" layoutX="769.0" layoutY="251.0" />
+      <TextField fx:id="caddress" layoutX="769.0" layoutY="328.0" />
+      <TextField fx:id="cph" layoutX="769.0" layoutY="399.0" />
+      <TextField fx:id="Text" alignment="CENTER" layoutX="410.0" layoutY="276.0" />
+      <Label fx:id="tip2" alignment="CENTER" layoutX="411.0" layoutY="318.0" prefHeight="20.0" prefWidth="200.0" textFill="#f50e0e" />
+      <Label fx:id="tip1" alignment="CENTER" layoutX="151.0" layoutY="460.0" prefHeight="20.0" prefWidth="200.0" textFill="#f50e0e" />
+      <Label fx:id="tip3" alignment="CENTER" layoutX="770.0" layoutY="456.0" prefHeight="20.0" prefWidth="200.0" textFill="#f50e0e" />
+      <Button fx:id="caigou" layoutX="190.0" layoutY="507.0" mnemonicParsing="false" onAction="#Action1" prefHeight="41.0" prefWidth="83.0" text="确认" />
+      <Label layoutX="361.0" layoutY="281.0" text="元" />
+      <Label layoutX="361.0" layoutY="343.0" text="元" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</Pane>

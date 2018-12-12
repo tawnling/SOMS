@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="modify" blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Patient_modifyController">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <children>
+      <Label layoutX="50.0" layoutY="70.0" text="用户名：" />
+      <Label layoutX="50.0" layoutY="140.0" text="密   码：" />
+      <Label layoutX="50.0" layoutY="210.0" text="性   别：" />
+      <Label layoutX="50.0" layoutY="280.0" text="年   龄：" />
+      <Label layoutX="50.0" layoutY="350.0" text="电   话：" />
+      <Label layoutX="162.0" layoutY="28.0" text="修改个人信息" />
+      <TextField fx:id="age" layoutX="118.0" layoutY="275.0" />
+      <TextField fx:id="tel" layoutX="118.0" layoutY="345.0" />
+      <RadioButton fx:id="male" layoutX="141.0" layoutY="210.0" mnemonicParsing="false" text="男">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="236.0" layoutY="210.0" mnemonicParsing="false" text="女" toggleGroup="$group" />
+      <Button fx:id="ok" layoutX="166.0" layoutY="448.0" mnemonicParsing="false" onAction="#OK_Action" prefHeight="39.0" prefWidth="83.0" text="确认" />
+      <Label fx:id="tips" alignment="CENTER" layoutX="117.0" layoutY="405.0" prefHeight="20.0" prefWidth="201.0" textFill="#eb0202" />
+      <Label fx:id="username" alignment="CENTER" layoutX="119.0" layoutY="70.0" prefHeight="20.0" prefWidth="201.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="117.0" layoutY="135.0" />
+   </children>
+</Pane>

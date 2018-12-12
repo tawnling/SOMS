@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="Doctor" blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="1058.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.DoctorController">
+   <children>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="628.0" layoutY="220.0" mnemonicParsing="false" onAction="#Diagnosis_Action" prefHeight="191.0" prefWidth="215.0" text="诊治">
+         <font>
+            <Font name="Arial" size="48.0" />
+         </font>
+         <effect>
+            <Blend opacity="0.85">
+               <topInput>
+                  <ImageInput />
+               </topInput>
+            </Blend>
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="exit" layoutX="977.0" layoutY="20.0" mnemonicParsing="false" onAction="#Exit_Action" text="退出" />
+      <Button fx:id="select" alignment="CENTER" contentDisplay="CENTER" layoutX="251.0" layoutY="220.0" mnemonicParsing="false" onAction="#Select_Action" prefHeight="191.0" prefWidth="215.0" text="查询">
+         <effect>
+            <Blend opacity="0.85">
+               <topInput>
+                  <ImageInput />
+               </topInput>
+            </Blend>
+         </effect>
+         <font>
+            <Font name="Arial" size="48.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</Pane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="patient_payment" blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Patient_PaymentController">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <children>
+      <Label alignment="CENTER" layoutX="212.0" layoutY="30.0" prefHeight="20.0" prefWidth="176.0" text="缴费">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="108.0" text="挂号费：" />
+      <Label layoutX="89.0" layoutY="171.0" text="诊断费：" />
+      <Label layoutX="89.0" layoutY="235.0" text="医药费：" />
+      <Label layoutX="89.0" layoutY="292.0" text="合    计：" />
+      <Label fx:id="p1" alignment="CENTER_RIGHT" layoutX="165.0" layoutY="108.0" prefHeight="20.0" prefWidth="100.0" text="0" />
+      <Label fx:id="p2" alignment="CENTER_RIGHT" layoutX="165.0" layoutY="171.0" prefHeight="20.0" prefWidth="100.0" text="0" />
+      <Label fx:id="p3" alignment="CENTER_RIGHT" layoutX="165.0" layoutY="235.0" prefHeight="20.0" prefWidth="100.0" text="0" />
+      <Label fx:id="p4" alignment="CENTER_RIGHT" layoutX="165.0" layoutY="292.0" prefHeight="20.0" prefWidth="100.0" text="0" />
+      <Label layoutX="273.0" layoutY="108.0" text="元" />
+      <Label layoutX="273.0" layoutY="171.0" text="元" />
+      <Label layoutX="273.0" layoutY="235.0" text="元" />
+      <Label layoutX="273.0" layoutY="292.0" text="元" />
+      <ImageView fx:id="image" fitHeight="262.0" fitWidth="259.0" layoutX="325.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="ok" layoutX="238.0" layoutY="422.0" mnemonicParsing="false" onAction="#OK_Action" prefHeight="30.0" prefWidth="124.0" text="确定缴费" />
+      <Label layoutX="355.0" layoutY="358.0" text="元" />
+      <TextField fx:id="pay" alignment="CENTER_RIGHT" layoutX="238.0" layoutY="353.0" prefHeight="30.0" prefWidth="100.0" text="0" />
+      <Label fx:id="tips" alignment="CENTER" layoutX="194.0" layoutY="395.0" prefHeight="20.0" prefWidth="204.0" textFill="#f50c0c" />
+   </children>
+</Pane>
